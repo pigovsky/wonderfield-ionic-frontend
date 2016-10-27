@@ -1,0 +1,12 @@
+<ion-view view-title="Login">
+  <ion-content>
+    <div class="padding" ng-controller="LoginController as loginController">
+      <form ng-submit="loginController.emailLogin()">
+        <input type="text" placeholder="enter your email here" ng-model="loginController.email">
+        <input type="password" placeholder="enter your WonderField password here" ng-model="loginController.password">
+        <input class="btn-primary" type="submit" value="login">
+      </form>
+      If you have no account then <button ng-click="loginController.showSignupWindow()">Signup</button>
+    </div>
+  </ion-content>
+</ion-view>

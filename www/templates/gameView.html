@@ -1,0 +1,17 @@
+<ion-view title="WonderField">
+  <ion-content  ng-controller="HomeController as homeController">
+    <p ng-bind="gameTask.hint"></p>
+    <p ng-bind="gameTask.currentWordState"></p>
+
+    <form ng-submit="homeController.guess()">
+      <input type="text" ng-model="homeController.word"  size="30"
+             placeholder="type a letter or whole word">
+      <input class="btn-primary" type="submit" value="guess">
+    </form>
+
+    <li ng-repeat="message in messages">
+      <p>{{message}}</p>
+    </li>
+
+  </ion-content>
+</ion-view>
