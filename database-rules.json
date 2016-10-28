@@ -1,6 +1,9 @@
 {
   "rules": {
     ".read": true,
-    ".write": true
+
+    "guesses": {
+      ".write": "auth != null"
+    }
   }
 }
